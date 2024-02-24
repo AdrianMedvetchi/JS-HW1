@@ -8,3 +8,7 @@
 */
 
 
+let name = 'Adrian';
+let admin = name;
+console.log(admin)
+

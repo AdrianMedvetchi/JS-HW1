@@ -13,3 +13,14 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
+let celsius;
+do {
+    celsius = prompt('Введите температуру в градусах Цельсия');
+    if (isNaN(celsius)) {
+        let errorMessage = "Ошибка! Введите числовое значение для температуры.";
+        alert(errorMessage);
+    }
+} while (isNaN(celsius)); 
+let fahrenheit = (9 / 5) * parseFloat(celsius) + 32;
+let message = "Цельсий: " + celsius + ", Фаренгейт: " + fahrenheit;
+alert(message);
