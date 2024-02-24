@@ -7,6 +7,9 @@
 Вывести значение переменной admin в консоль.
 */
 
+let name = 'Adrian';
+let admin = name;
+console.log(admin)
 
 let name = 'Adrian';
 let admin = name;
