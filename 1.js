@@ -13,14 +13,4 @@
 в консоль "Одно или более значений некорректно.".
 */
 
-let positive;
-let negative; 
-do { positive = +prompt('write a positive number');
-     negative = +prompt('write a negative number');
-    if (Number.isNaN(positive) || Number.isNaN(negative)) {
-        alert('the numbers should be negative or positive');
-    } else if (positive < 0 || negative > 0) { 
-        alert('enter the corect number'); 
-    }   
-} while (Number.isNaN(positive) || Number.isNaN(negative) || positive < 0 || negative > 0);
-console.log(`all numbers are correctly written ${positive} and ${negative}`);
+

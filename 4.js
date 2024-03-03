@@ -23,19 +23,5 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
-let number;
-do { number = parseInt(prompt("Введите число:"));
-  if (Number.isNaN(number)) {
-    alert('vedite korektnoe chislo')
-  } else if (number < 0) {
-    alert('vedite korektnoe chislo') 
-  }
-} while (Number.isNaN(number) || number < 0);
 
-const hundreds = Math.trunc((number / 100) % 10);
-const tens = Math.trunc((number / 10) % 10);
-const units = number % 10;
-
-alert(`В числе ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`);
 

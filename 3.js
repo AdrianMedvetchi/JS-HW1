@@ -14,36 +14,4 @@
 число 32.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
 
-// let dayNumber;
-// do { dayNumber = parseInt(prompt('enter a number from 1 to 32'));
-//     if (dayNumber < 1 || dayNumber >= 32) {
-//         alert('Неверное значение');
-//     }
-// } while (dayNumber < 1 || dayNumber >= 32);
-// let decade;
-// if (dayNumber <= 10) {
-//     decade = 1;
-// } else if (dayNumber <= 20) {
-//     decade = 2;
-// } else {
-//     decade = 3;
-// }
-// console.log(`Число ${dayNumber} попадает в ${decade} декаду месяца.`);
-
-// alternative code with Math.ceil
-let dayNumber;
-do {
-    dayNumber = parseInt(prompt('Введите число от 1 до 31:'));
-    if (dayNumber < 1 || dayNumber >= 32 || isNaN(dayNumber)) {
-        alert('Неверное значение');
-    }
-} while (dayNumber < 1 || dayNumber >= 32 || isNaN(dayNumber));
-
-let decade = Math.ceil(dayNumber / 10);
-// the error is with number 31 it will be displayed in 4th decade, but
-if (decade === 4) {
-    decade = 3; 
-}
-console.log(`Число ${dayNumber} попадает в ${decade} декаду месяца.`);
